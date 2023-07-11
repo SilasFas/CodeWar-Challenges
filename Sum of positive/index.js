@@ -3,14 +3,14 @@
 // Note: if there is nothing to sum, the sum is default to 0.
 
 function positiveSum(array) {
-    let result = 0;
+  let result = 0;
 
-    array.map((number) => {
-        if (number >= 0) {
-            result += number
-        }
-    })
-    return result
+  array.map((number) => {
+    if (number >= 0) {
+      result += number
+    }
+  })
+  return result
 }
 
 positiveSum([1, 2, -3, -4, -5, -6, -7, -8, -9])
@@ -19,15 +19,25 @@ positiveSum([1, 2, -3, -4, -5, -6, -7, -8, -9])
 // Another alternative 
 
 function positiveSum(array) {
-    let result = 0;
-  
-    for (let number of array) {
-      if (number >= 0) {
-        result += number;
-      }
+  let result = 0;
+
+  for (let number of array) {
+    if (number >= 0) {
+      result += number;
     }
-  
-    return result;
   }
-  
-  positiveSum([1, 2, -3, -4, -5, -6, -7, -8, -9]);
+
+  return result;
+}
+
+positiveSum([1, 2, -3, -4, -5, -6, -7, -8, -9]);
+
+
+// Another alternative 
+
+/*
+const positiveSum = array => array.reduce((sum, number) => number >= 0 ? sum + number : sum, 0);
+
+positiveSum([1, 2, -3, -4, -5, -6, -7, -8, -9]);
+
+*/
