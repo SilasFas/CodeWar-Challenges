@@ -20,11 +20,17 @@
 
 
 // Anoter Version
-function opposite(number) {
-    if (number != 0) {
-        return -number;
-    }
-    return number;
-}
+// function opposite(number) {
+//     if (number != 0) {
+//         return -number;
+//     }
+//     return number;
+// }
+// console.log(opposite(0)); 
 
-console.log(opposite(0)); 
+
+// Anoter Version
+function opposite(number) {
+    return number > 0 ? -number : number;
+}
+console.log(opposite(0))
